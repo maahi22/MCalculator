@@ -215,9 +215,12 @@
                                             <constraint firstAttribute="width" constant="80" id="Mrr-9I-6Y8"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="-">
+                                        <state key="normal" title="mic">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YU7-IH-4u8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVS-Cr-ipw">
                                         <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -374,8 +377,15 @@
                             <constraint firstItem="qdh-Rm-YtQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O40-AP-KBD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Calculator" id="As7-Jg-wfC"/>
+                    <navigationItem key="navigationItem" title="Calculator" id="As7-Jg-wfC">
+                        <barButtonItem key="rightBarButtonItem" title="Speek" id="44i-vM-GvC">
+                            <connections>
+                                <action selector="speek:" destination="BYZ-38-t0r" id="5He-R0-Awt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="startButton" destination="3yx-Gc-HcK" id="WAN-yT-38D"/>
                         <outlet property="txtField" destination="A4x-Zq-FVa" id="pz2-OX-MhY"/>
                     </connections>
                 </viewController>

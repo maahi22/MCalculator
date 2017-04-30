@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F04392D1EB66E3D00520F0C /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F04392C1EB66E3D00520F0C /* Speech.framework */; };
 		0FFFF28B1EB0CB150017D0DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFF28A1EB0CB150017D0DD /* AppDelegate.swift */; };
 		0FFFF28D1EB0CB150017D0DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFF28C1EB0CB150017D0DD /* ViewController.swift */; };
 		0FFFF2901EB0CB150017D0DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFFF28E1EB0CB150017D0DD /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F04392C1EB66E3D00520F0C /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 		0FFFF2871EB0CB150017D0DD /* MCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFFF28A1EB0CB150017D0DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FFFF28C1EB0CB150017D0DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F04392D1EB66E3D00520F0C /* Speech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +59,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F04392B1EB66E3C00520F0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F04392C1EB66E3D00520F0C /* Speech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0FFFF27E1EB0CB150017D0DD = {
 			isa = PBXGroup;
 			children = (
 				0FFFF2891EB0CB150017D0DD /* MCalculator */,
 				0FFFF29E1EB0CB150017D0DD /* MCalculatorTests */,
 				0FFFF2881EB0CB150017D0DD /* Products */,
+				0F04392B1EB66E3C00520F0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -283,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -340,6 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FS58X3J7RU;
 				INFOPLIST_FILE = MCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kTeck.MCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FS58X3J7RU;
 				INFOPLIST_FILE = MCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kTeck.MCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,6 +421,7 @@
 				0FFFF2A61EB0CB150017D0DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FFFF2A71EB0CB150017D0DD /* Build configuration list for PBXNativeTarget "MCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +430,7 @@
 				0FFFF2A91EB0CB150017D0DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
